@@ -18,4 +18,6 @@ RUN apk add --no-cache --upgrade --no-progress \
     && for i in $(seq 500 1999); do echo "user:x:$i:$i::/home:/sbin/nologin"; done >> /etc/passwd \
     && apk del .usermod
 
+WORKDIR /workspace
+
 CMD ["/bin/bash"]
