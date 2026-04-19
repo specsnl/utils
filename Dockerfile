@@ -12,6 +12,7 @@ RUN apk add --no-cache --upgrade --no-progress \
         openssh-keygen~=10.2 \
         pass~=1.7 \
         gnupg~=2.4 \
+        git~=2.52 \
     && apk add --no-cache --upgrade --no-progress --virtual .usermod \
         shadow~=4.18 \
     && usermod --shell /bin/bash root \

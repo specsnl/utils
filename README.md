@@ -14,6 +14,7 @@ A minimal Alpine based image with:
 - ssh-keygen
 - gnupg
 - pass
+- git
 
 Pulling image from GitHub Container Registry:
 
