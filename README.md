@@ -15,6 +15,20 @@ A minimal Alpine based image with:
 - gnupg
 - pass
 
+Pulling image from GitHub Container Registry:
+
+```bash
+docker pull ghcr.io/ilyes512/utils:latest
+```
+
+Interactive shell and mounting the current directory:
+
+```bash
+docker run -it -v $(pwd):/workspace --rm ghcr.io/ilyes512/utils:latest /bin/bash
+```
+
+Default workspace: `/workspace`
+
 ## Task
 
 This project uses [Task](https://taskfile.dev) (an task runner / build tool).
