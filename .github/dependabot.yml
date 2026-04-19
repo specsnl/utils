@@ -10,6 +10,10 @@ updates:
     labels:
       - dependencies
       - github-actions
+    groups:
+      specsnl-actions:
+        patterns:
+          - "specsnl/github-actions"
   - package-ecosystem: "docker"
     directory: "/"
     schedule:
