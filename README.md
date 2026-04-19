@@ -18,13 +18,13 @@ A minimal Alpine based image with:
 Pulling image from GitHub Container Registry:
 
 ```bash
-docker pull ghcr.io/ilyes512/utils:latest
+docker pull ghcr.io/specsnl/utils:latest
 ```
 
 Interactive shell and mounting the current directory:
 
 ```bash
-docker run -it -v $(pwd):/workspace --rm ghcr.io/ilyes512/utils:latest /bin/bash
+docker run -it -v $(pwd):/workspace --rm ghcr.io/specsnl/utils:latest /bin/bash
 ```
 
 Default workspace: `/workspace`
