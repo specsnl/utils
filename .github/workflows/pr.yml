@@ -42,7 +42,7 @@ jobs:
 
   merge:
     name: Merge
-    uses: specsnl/github-actions/.github/workflows/merge.yml@1.2.1
+    uses: specsnl/github-actions/.github/workflows/merge.yml@1.2.3
     needs: build
     with:
       runs-on: ubuntu-24.04
