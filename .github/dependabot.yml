@@ -3,21 +3,21 @@
 
 version: 2
 updates:
-  - package-ecosystem: "github-actions"
-    directory: "/"
+  - package-ecosystem: github-actions
+    directory: /
     schedule:
-      interval: "weekly"
+      interval: weekly
     labels:
       - dependencies
       - github-actions
     groups:
       specsnl-actions:
         patterns:
-          - "specsnl/github-actions"
-  - package-ecosystem: "docker"
-    directory: "/"
+          - "specsnl/github-actions*"
+  - package-ecosystem: docker
+    directory: /
     schedule:
-      interval: "weekly"
+      interval: weekly
     labels:
       - dependencies
       - docker
