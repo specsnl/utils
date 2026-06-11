@@ -1,5 +1,5 @@
 # Latest version of Alpine image: https://hub.docker.com/_/alpine/tags
-FROM alpine:3.23.4
+FROM alpine:3.24.0
 
 RUN apk add --no-cache --upgrade --no-progress \
         bash~=5.3 \
