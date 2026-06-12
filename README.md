@@ -15,7 +15,7 @@ A minimal Alpine based image with:
 - gnupg
 - pass
 - git
-- [svu](https://github.com/caarlos0/svu) ()
+- [svu](https://github.com/caarlos0/svu)
 
 Pulling image from GitHub Container Registry:
 
