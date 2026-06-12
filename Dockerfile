@@ -1,6 +1,8 @@
 # syntax=docker/dockerfile:1
 # check=error=true
 
+FROM caarlos0/svu:3.4.1 AS svu
+
 # Latest version of Alpine image: https://hub.docker.com/_/alpine/tags
 FROM alpine:3.24.0
 
@@ -21,6 +23,8 @@ RUN apk add --no-cache --upgrade --no-progress \
     && usermod --shell /bin/bash root \
     && for i in $(seq 500 1999); do echo "user:x:$i:$i::/home:/sbin/nologin"; done >> /etc/passwd \
     && apk del .usermod
+
+COPY --from=svu /usr/bin/svu /usr/bin/svu
 
 WORKDIR /workspace
 
