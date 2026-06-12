@@ -1,18 +1,18 @@
 # Latest version of Alpine image: https://hub.docker.com/_/alpine/tags
-FROM alpine:3.23.4
+FROM alpine:3.24.0
 
 RUN apk add --no-cache --upgrade --no-progress \
         bash~=5.3 \
-        curl~=8.19 \
+        curl~=8.20 \
         wget~=1.25 \
         jq~=1.8 \
-        yq~=4.49 \
+        yq~=4.53 \
         sed~=4.9 \
         pcre-tools~=8.45 \
-        openssh-keygen~=10.2 \
+        openssh-keygen~=10.3 \
         pass~=1.7 \
         gnupg~=2.4 \
-        git~=2.52 \
+        git~=2.54 \
     && apk add --no-cache --upgrade --no-progress --virtual .usermod \
         shadow~=4.18 \
     && usermod --shell /bin/bash root \
