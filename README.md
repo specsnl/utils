@@ -7,8 +7,8 @@ A minimal Alpine based image with:
 - bash (set as default shell for root user)
 - curl
 - wget
-- jq
-- yq
+- [jq](https://jqlang.org)
+- [yq](https://mikefarah.gitbook.io/yq)
 - sed
 - pcre-tools
 - ssh-keygen
