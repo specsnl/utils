@@ -1,3 +1,6 @@
+# syntax=docker/dockerfile:1
+# check=error=true
+
 # Latest version of Alpine image: https://hub.docker.com/_/alpine/tags
 FROM alpine:3.24.0
 
