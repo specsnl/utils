@@ -8,7 +8,6 @@ updates:
     schedule:
       interval: weekly
     labels:
-      - dependencies
       - github-actions
     groups:
       specsnl-actions:
@@ -19,5 +18,4 @@ updates:
     schedule:
       interval: weekly
     labels:
-      - dependencies
       - docker
