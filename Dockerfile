@@ -4,7 +4,7 @@
 FROM caarlos0/svu:3.4.1 AS svu
 
 # Latest version of Alpine image: https://hub.docker.com/_/alpine/tags
-FROM alpine:3.24.0
+FROM alpine:3.24.1
 
 RUN apk add --no-cache --upgrade --no-progress \
         bash~=5.3 \
