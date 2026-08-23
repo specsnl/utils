@@ -8,7 +8,7 @@ FROM alpine:3.24.1
 
 RUN apk add --no-cache --upgrade --no-progress \
         bash~=5.3 \
-        curl~=8.20 \
+        curl~=8.21 \
         wget~=1.25 \
         jq~=1.8 \
         yq~=4.53 \
