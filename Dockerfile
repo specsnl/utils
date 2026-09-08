@@ -1,6 +1,7 @@
 # syntax=docker/dockerfile:1
 # check=error=true
 
+# Latest version of svu image: https://hub.docker.com/r/caarlos0/svu/tags or https://github.com/caarlos0/svu/releases
 FROM caarlos0/svu:3.4.1 AS svu
 
 # Latest version of Alpine image: https://hub.docker.com/_/alpine/tags
