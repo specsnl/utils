@@ -1,6 +1,7 @@
 # syntax=docker/dockerfile:1
 # check=error=true
 
+# Latest version of svu image: https://hub.docker.com/r/caarlos0/svu/tags or https://github.com/caarlos0/svu/releases
 FROM caarlos0/svu:3.4.1 AS svu
 
 # Latest version of Alpine image: https://hub.docker.com/_/alpine/tags
@@ -8,7 +9,7 @@ FROM alpine:3.24.1
 
 RUN apk add --no-cache --upgrade --no-progress \
         bash~=5.3 \
-        curl~=8.21 \
+        curl~=8.22 \
         wget~=1.25 \
         jq~=1.8 \
         yq~=4.53 \
