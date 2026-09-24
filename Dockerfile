@@ -19,6 +19,8 @@ RUN apk add --no-cache --upgrade --no-progress \
         pass~=1.7 \
         gnupg~=2.4 \
         git~=2.54 \
+        sops=~3.12 \
+        age~=1.3 \
     && apk add --no-cache --upgrade --no-progress --virtual .usermod \
         shadow~=4.18 \
     && usermod --shell /bin/bash root \

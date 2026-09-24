@@ -16,6 +16,8 @@ A minimal Alpine based image with:
 - pass
 - git
 - [svu](https://github.com/caarlos0/svu)
+- [sops](https://github.com/getsops/sops)
+- [age](https://github.com/filosottile/age)
 
 Pulling image from GitHub Container Registry:
 
