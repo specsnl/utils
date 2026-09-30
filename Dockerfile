@@ -8,6 +8,7 @@ FROM caarlos0/svu:3.4.1 AS svu
 FROM alpine:3.24.2
 
 RUN apk add --no-cache --upgrade --no-progress \
+        'ca-certificates>=20260909' \
         bash~=5.3 \
         curl~=8.22 \
         wget~=1.25 \
