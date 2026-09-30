@@ -21,13 +21,13 @@ A minimal Alpine based image with:
 
 Pulling image from GitHub Container Registry:
 
-```bash
+```sh
 docker pull ghcr.io/specsnl/utils:latest
 ```
 
 Interactive shell and mounting the current directory:
 
-```bash
+```sh
 docker run -it -v $(pwd):/workspace --rm ghcr.io/specsnl/utils:latest /bin/bash
 ```
 
@@ -39,7 +39,7 @@ This project uses [Task](https://taskfile.dev) (an task runner / build tool).
 
 Available tasks for this project:
 
-```
+```sh
 * build:               Build the Utils image
 * lint:                Apply a Dockerfile linter (https://github.com/hadolint/hadolint)
 * shell:               Interactive shell
