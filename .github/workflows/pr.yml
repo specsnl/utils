@@ -16,7 +16,7 @@ jobs:
 
   linting:
     name: Linting
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-26.04
     steps:
       - name: Checkout
         uses: actions/checkout@v7
@@ -31,9 +31,9 @@ jobs:
       fail-fast: false
       matrix:
         runs-on:
-          - os: ubuntu-24.04
+          - os: ubuntu-26.04
             platform: linux/amd64
-          - os: ubuntu-24.04-arm
+          - os: ubuntu-26.04-arm
             platform: linux/arm64
     with:
       runs-on: ${{ matrix.runs-on.os }}
@@ -45,5 +45,5 @@ jobs:
     uses: specsnl/github-actions/.github/workflows/merge.yml@2.4.4
     needs: build
     with:
-      runs-on: ubuntu-24.04
+      runs-on: ubuntu-26.04
       image-name: ghcr.io/${{ github.repository }}
