@@ -4,6 +4,9 @@
 # Latest version of svu image: https://hub.docker.com/r/caarlos0/svu/tags or https://github.com/caarlos0/svu/releases
 FROM caarlos0/svu:3.4.1 AS svu
 
+# Latest version of yq: https://hub.docker.com/r/mikefarah/yq/tags
+FROM mikefarah/yq:4.54.1 AS yq
+
 # Latest version of Alpine image: https://hub.docker.com/_/alpine/tags
 FROM alpine:3.24.2
 
@@ -13,7 +16,6 @@ RUN apk add --no-cache --upgrade --no-progress \
         curl~=8.22 \
         wget~=1.25 \
         jq~=1.8 \
-        yq~=4.53 \
         sed~=4.9 \
         pcre-tools~=8.45 \
         openssh-keygen~=10.3 \
@@ -30,6 +32,7 @@ RUN apk add --no-cache --upgrade --no-progress \
     && apk del .usermod
 
 COPY --from=svu /usr/bin/svu /usr/bin/svu
+COPY --from=yq /usr/bin/yq /usr/local/bin/yq
 
 WORKDIR /workspace
 
