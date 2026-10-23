@@ -19,6 +19,7 @@ A minimal Alpine based image with:
 - [sops](https://github.com/getsops/sops)
 - [age](https://github.com/filosottile/age)
 - openssl
+- [wg](https://www.wireguard.com) (WireGuard key generation)
 
 Pulling image from GitHub Container Registry:
 
