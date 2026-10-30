@@ -8,12 +8,12 @@ FROM caarlos0/svu:3.4.1 AS svu
 FROM mikefarah/yq:4.54.1 AS yq
 
 # Latest version of Alpine image: https://hub.docker.com/_/alpine/tags
-FROM alpine:3.24.2
+FROM alpine:3.24.3
 
 RUN apk add --no-cache --upgrade --no-progress \
         'ca-certificates>=20260909' \
         bash~=5.3 \
-        curl~=8.22 \
+        curl~=8.23 \
         wget~=1.25 \
         jq~=1.8 \
         sed~=4.9 \
