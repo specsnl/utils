@@ -20,6 +20,8 @@ A minimal Alpine based image with:
 - [age](https://github.com/filosottile/age)
 - openssl
 - [wg](https://www.wireguard.com) (WireGuard key generation)
+- [gh](https://cli.github.com) (GitHub CLI)
+- [task](https://taskfile.dev)
 
 Pulling image from GitHub Container Registry:
 
