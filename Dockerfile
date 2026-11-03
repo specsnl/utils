@@ -26,6 +26,7 @@ RUN apk add --no-cache --upgrade --no-progress \
         age~=1.3 \
         openssl~=3.5 \
         wireguard-tools-wg~=1.0 \
+        github-cli~=2.97 \
     && apk add --no-cache --upgrade --no-progress --virtual .usermod \
         shadow~=4.18 \
     && usermod --shell /bin/bash root \
