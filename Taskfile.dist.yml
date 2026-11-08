@@ -14,10 +14,10 @@ tasks:
   build:
     desc: Build the Utils image
     deps: [lint]
+    env:
+      IMAGE: "{{.DOCKER_REPO}}/{{.DOCKER_OWNER}}/{{.DOCKER_IMAGE_NAME}}"
     cmds:
-      - docker build
-        --tag {{.DOCKER_REPO}}/{{.DOCKER_OWNER}}/{{.DOCKER_IMAGE_NAME}}:latest
-        .
+      - docker buildx bake --load
 
   lint:
     desc: Apply a Dockerfile linter (https://github.com/hadolint/hadolint)
