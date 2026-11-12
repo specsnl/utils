@@ -5,7 +5,7 @@
 FROM caarlos0/svu:3.4.1 AS svu
 
 # Latest version of yq: https://hub.docker.com/r/mikefarah/yq/tags
-FROM mikefarah/yq:4.54.1 AS yq
+FROM mikefarah/yq:4.54.3 AS yq
 
 # Latest version of Alpine image: https://hub.docker.com/_/alpine/tags
 FROM alpine:3.24.3
