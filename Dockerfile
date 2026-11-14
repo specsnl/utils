@@ -8,7 +8,7 @@ FROM caarlos0/svu:3.4.1 AS svu
 FROM mikefarah/yq:4.54.3 AS yq
 
 # Latest version of Alpine image: https://hub.docker.com/_/alpine/tags
-FROM alpine:3.24.3
+FROM alpine:3.24.4
 
 # Task repository: https://taskfile.dev/docs/installation#cloudsmith
 ADD --checksum=sha256:ba20fb60492ecf172fb968f2f9078cb14552dc57609980cb747b5003e80612fd \
