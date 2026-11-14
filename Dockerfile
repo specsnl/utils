@@ -2,7 +2,7 @@
 # check=error=true
 
 # Latest version of svu image: https://hub.docker.com/r/caarlos0/svu/tags or https://github.com/caarlos0/svu/releases
-FROM caarlos0/svu:3.4.1 AS svu
+FROM caarlos0/svu:3.4.4 AS svu
 
 # Latest version of yq: https://hub.docker.com/r/mikefarah/yq/tags
 FROM mikefarah/yq:4.54.3 AS yq
