@@ -17,7 +17,7 @@ ADD --checksum=sha256:ba20fb60492ecf172fb968f2f9078cb14552dc57609980cb747b5003e8
 
 RUN echo "@task https://dl.cloudsmith.io/public/task/task/alpine/v$(cut -d. -f1,2 /etc/alpine-release)/main" >> /etc/apk/repositories \
     && apk add --no-cache --upgrade --no-progress \
-        'ca-certificates>=20260909' \
+        'ca-certificates>=20261020' \
         bash~=5.3 \
         curl~=8.23 \
         wget~=1.25 \
